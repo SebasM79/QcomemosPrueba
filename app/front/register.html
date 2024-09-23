@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Login - Q'comemos</title>
-		<link rel="stylesheet" href="login.css" />
+		<title>Registro - Q'comemos</title>
+		<link rel="stylesheet" href="register.css" />
 	</head>
 	<body>
-		<div class="login-container">
+		<div class="register-container">
 			<header class="header">
 				<div class="top-bar">
 					<div class="info">
@@ -34,14 +34,15 @@
 				</div>
 			</header>
 
-			<div class="login-form">
+			<div class="register-form">
 				<img
 					class="form-image"
 					src="pexels-bemistermister-3434523.jpg"
 					alt="Form Image"
 				/>
 				<div class="form-content">
-					<h2 class="login-title">Iniciar sesión</h2>
+					<h2 class="register-title">Crear cuenta</h2>
+
 					<label for="email" class="label">Email</label>
 					<input
 						type="email"
@@ -58,19 +59,22 @@
 						placeholder="Ingrese su contraseña"
 					/>
 
-					<button class="login-button">Ingresar</button>
+					<label for="confirm-password" class="label">Repetir Contraseña</label>
+					<input
+						type="password"
+						id="confirm-password"
+						class="input-field input-confirm-password"
+						placeholder="Repita su contraseña"
+					/>
 
-					<div class="create-account">
-						<span class="no-account">¿No tenés cuenta?</span>
-						<a href="/register" class="create-account-link"
-							>Crear cuenta</a
-						>
+					<button class="register-button">Crear cuenta</button>
+
+					<div class="login-option">
+						<span class="have-account">¿Ya tenés cuenta?</span>
+						<a href="/front/login.html" class="login-link">Iniciar sesión</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</body>
 </html>
-<!--
-    Pagina de Login / Registro
--->

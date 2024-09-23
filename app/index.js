@@ -11,7 +11,8 @@ app.listen(app.get("port"));
 console.log("Servidor escuchando en el puerto ", app.get("port"));
 
 //configuracion de archivos estaticos
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/public/css"));
+app.use(express.static(__dirname + "/front/img"));
 
 //rutas
 
@@ -19,6 +20,9 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/front/home.html");
 });
 
-app.get("/front", (req, res) => {
+app.get("/login", (req, res) => {
     res.sendFile(__dirname + "/front/login.html");
+});
+app.get("/register", (req, res) => {
+    res.sendFile(__dirname + "/front/register.html");
 });
