@@ -34,6 +34,7 @@
 				</div>
 			</header>
 
+			<!-- Formulario de registro -->
 			<div class="register-form">
 				<img
 					class="form-image"
@@ -42,36 +43,43 @@
 				/>
 				<div class="form-content">
 					<h2 class="register-title">Crear cuenta</h2>
+					
+					<!-- Agregar la etiqueta form -->
+					<form id="register-form">
+						<label for="email" class="label">Email</label>
+						<input
+							type="email"
+							id="email"
+							name="email" 
+							class="input-field input-email"
+							placeholder="Ingrese su email"
+						/>
 
-					<label for="email" class="label">Email</label>
-					<input
-						type="email"
-						id="email"
-						class="input-field input-email"
-						placeholder="Ingrese su email"
-					/>
+						<label for="password" class="label">Contraseña</label>
+						<input
+							type="password"
+							id="password"
+							name="password" 
+							class="input-field input-password"
+							placeholder="Ingrese su contraseña"
+						/>
 
-					<label for="password" class="label">Contraseña</label>
-					<input
-						type="password"
-						id="password"
-						class="input-field input-password"
-						placeholder="Ingrese su contraseña"
-					/>
+						<label for="confirm-password" class="label">Repetir Contraseña</label>
+						<input
+							type="password"
+							id="confirm-password"
+							name="password2" 
+							class="input-field input-confirm-password"
+							placeholder="Repita su contraseña"
+						/>
 
-					<label for="confirm-password" class="label">Repetir Contraseña</label>
-					<input
-						type="password"
-						id="confirm-password"
-						class="input-field input-confirm-password"
-						placeholder="Repita su contraseña"
-					/>
-
-					<button class="register-button">Crear cuenta</button>
+						<!-- Botón dentro del form -->
+						<button type="submit" class="register-button">Crear cuenta</button>
+					</form>
 
 					<div class="login-option">
 						<span class="have-account">¿Ya tenés cuenta?</span>
-						<a href="/front/login.html" class="login-link">Iniciar sesión</a>
+						<a href="/login.html" class="login-link">Iniciar sesión</a>
 					</div>
 				</div>
 			</div>
